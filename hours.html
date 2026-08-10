@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<!-- Note: this page contains #8 bugs -->
+<!-- Note: this page contains #7 bugs -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/ann_arbor.ico">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 
@@ -14,13 +15,13 @@
   <header>
     <h1>Ann Arbor Art Museum</h1>
 
- <!-- bug this is missing a nav tag -->
+ <!-- bug 1 this is missing a nav tag -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="exhibits.html">Current Exhibits</a></li>
-        <li><a href="hours.html">Hours and Admission</a></li>
+        <li class="active"><a href="hours.html">Hours and Admission</a></li>
         <li><a>Plan Your Visit</a></li>
-        <!-- BUG: This link is missing an href attribute.It should be:<a href="visit.html">Plan Your Visit</a> -->
+        <!-- BUG 2: This link is missing an href attribute.It should be:<a href="visit.html">Plan Your Visit</a> -->
       </ul>
  
   </header>
@@ -47,7 +48,7 @@
             <th scope="col">Hours</th>
             <th scope="col">Adult Admission</th>
             Student Admission
-            <!-- bug not inside th tag -->
+            <!-- bug 3 not inside th tag -->
             <th scope="col">Ann Arbor Visitor Notes</th>
           </tr>
         </thead>
@@ -72,7 +73,7 @@
             <th scope="row">Saturday</th>
             <td>9:00 AM – 6:00 PM</td>
             $14
-            <!-- bug not inside td tag -->
+            <!-- bug 4 not inside td tag -->
             <td>$9</td>
             <td>Expect heavier traffic during football weekends and festivals</td>
           </tr>
@@ -90,7 +91,7 @@
 
     <section>
       <h4>Free Admission Days</h4>
-      <!-- BUG: Heading level skips from <h2> to <h4>.
+      <!-- BUG 5: Heading level skips from <h2> to <h4>.
            This should probably be an <h3>, or another <h2> if it is a major section. -->
 
       <p>
@@ -111,8 +112,7 @@
       <ol>
         <li>Choose a membership level.</li>
         <li>Complete the online or in-person registration form.</li>
-        <li>Show your membership card when you arrive.
-        <!-- BUG: Missing closing </li> tag. -->
+        <li>Show your membership card when you arrive.</li>
       </ol>
     </section>
 
@@ -121,7 +121,7 @@
 
 
         Groups of ten or more visitors should contact the museum in advance.Group reservations help staff prepare gallery guides, accessibility accommodations, and gathering spaces.
-       <!-- bug missing p tag -->
+       <!-- bug 6 missing p tag -->
 
       <p>
         School groups can request tours connected to Ann Arbor history, public art, environmental studies, visual analysis, or careers in museums and cultural organizations.
@@ -131,7 +131,7 @@
     </section>
   </main>
 
-  <!-- bug - following content is not inside footer tag -->
+  <!-- bug 7 - following content is not inside footer tag -->
     <p>&copy; 2026 Ann Arbor Art Museum. All rights reserved.</p>
 
     <p>

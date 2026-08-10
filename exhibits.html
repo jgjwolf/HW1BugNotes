@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<!-- Note this page has #13 bugs -->
+<!-- Note this page has #10 bugs -->
 <html>
-<!-- BUG: Missing lang attribute. This should be <html lang="en">. -->
+<!-- BUG 1: Missing lang attribute. This should be <html lang="en">. -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Current Exhibits | Ann Arbor Art Museum</title>
+  <link rel="icon" href="images/ann_arbor.ico">
   <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
+  <title>Current Exhibits | Ann Arbor Art Museum</title>
+
 </head>
 
 <body>
@@ -18,24 +20,22 @@
     <nav>
       <ol>
         <li><a href="index">Home</a></li>
-        <!-- bug: missing html at the end for index page -->
-        <li><a href="exhibits.html">Current Exhibits</a></li>
+        <!-- bug 2: missing html at the end for index page -->
+        <li class="active"><a href="exhibits.html">Current Exhibits</a></li>
         <li><a href="hours.html">Hours and Admission</a></li>
         <li><a href="visit.html">Plan Your Visit</a></li>
       </ol>
-      <!-- bug: ol instead of ul for navigation -->
+      <!-- bug 3: ol instead of ul for navigation -->
     </nav>
   </header>
 
   <main>
     <section>
-      <h3>Current Exhibits</h3>
-      <!-- BUG: Heading level skips from <h1> to <h3>. This should be an <h2>. -->
-
+      <h2>Current Exhibits</h2>
       <p> The Ann Arbor Art Museum presents exhibitions inspired by the city of Ann Arbor, Michigan. The museum explores the relationship between art, local history, public space, student life, neighborhood identity, and the natural environment of the Huron River watershed. </p>
 
       <p>Current exhibits highlight the city’s downtown streets, historic theaters, university landmarks, parks, murals, independent bookstores, seasonal festivals, and creative communities. Visitors are invited to think about how art can help people understand the character of a place. <p>
-      <!-- BUG: The paragraph above is not closed correctly.
+      <!-- BUG 4: The paragraph above is not closed correctly.
            The second <p> should be </p>. -->
     </section>
 
@@ -45,11 +45,8 @@
       <figure>
           <img
             src="images/Huron_River_in_Ann_Arbor_(8740760787).jpg"
-            alt="photo"
+            alt="The Huron River flowing through a wooded area in Ann Arbor"
             width="800">
-        <!-- BUG: The alt text "photo" is not meaningful.A better alt value would describe the image, such as:
-alt="The Huron River flowing through a wooded area in Ann Arbor" -->
-
         <figcaption> The Huron River has shaped Ann Arbor’s recreation, environment, transportation, and sense of place. </figcaption>
       </figure>
 
@@ -64,7 +61,7 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
       <img
         src="images/Fairy_door_at_Peaceable_Kingom_Ann_Arbor_Michigan.JPG"
         width="800">
-    <!-- BUG: Missing alt attribute. -->
+    <!-- BUG 5: Missing alt attribute. -->
       <img
         src="images/Fairy_door_at_Red_Shoes_Ann_Arbor_Michigan_close-up.JPG"
         alt="red shoes fairy door"
@@ -73,8 +70,6 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
   </figure>
 
   <p>Ann Arbor’s fairy doors are a beloved form of public art and local storytelling. These miniature doors appear in unexpected places throughout the city, including shops, theaters, cafes, offices, and community spaces. They invite visitors to slow down, look closely, and notice details they might otherwise miss.</p>
-
-  <p>The fairy doors are often associated with artist Jonathan B. Wright, whose playful installations helped turn the doors into one of Ann Arbor’s most recognizable small-scale art traditions. Some doors are simple and hidden, while others include tiny windows, doorknobs, signs, mailboxes, or miniature interior scenes.</p>
 
   <p>This exhibit explores how the fairy doors connect art, imagination, local business culture, and walking through downtown Ann Arbor. Visitors can study photographs, maps, sketches, and recreated miniature doors while considering how public art can transform ordinary spaces into places of curiosity and delight.</p>
 
@@ -94,7 +89,8 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
   
             alt="Stone buildings and a grassy courtyard at the University of Michigan Law Quadrangle"
             width="800">
-        <!-- BUG: the image is missing a src. -->
+        <!-- BUG 6: the image is missing a src. -->
+           <figcaption>The Law Quad is a great place for graduation photos</figcaption>
       </figure>
 
       <p>The University of Michigan is deeply connected to Ann Arbor’s cultural life. Students, faculty, staff, visiting artists, researchers, and local residents all contribute to the city’s creative identity.</p>
@@ -111,11 +107,11 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
 
       <ul>
         <li><strong>Market culture:</strong> Artists document produce stands, handmade goods, and public gathering spaces.
-        <!-- BUG: Missing closing </li> tag. -->
+        <!-- BUG 7: Missing closing </li> tag. -->
 
         <li><strong>Local business signs:</strong> Designers study typography, color, and storefront identity.</li>
         <li><strong>Neighborhood memory:<strong> Photographs show how buildings and streets change over time.</li>
-          <!-- bug - forgot to close strong tag -->
+          <!-- bug 8- forgot to close strong tag -->
         <li><strong>Public interaction:</strong> Sketches and interviews record how people use shared spaces.</li>
       </ul>
     </section>
@@ -127,7 +123,7 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
 
       <p>
         <a href="#">Learn more about upcoming exhibit programs.</a>
-        <!-- BUG: The link uses href="#", which does not go to a meaningful destination. -->
+        <!-- BUG 9: The link uses href="#", which does not go to a meaningful destination. -->
 
 
       </p>
@@ -138,7 +134,7 @@ alt="The Huron River flowing through a wooded area in Ann Arbor" -->
     <p>&copy; 2026 Ann Arbor Art Museum</p>
 
     <p>Contact: info@annarborartmuseum.example</p>
-    <!-- BUG: The email address is plain text.
+    <!-- BUG 10: The email address is plain text.
          It would be more usable as a mailto link:
          <a href="mailto:info@annarborartmuseum.example">info@annarborartmuseum.example</a> -->
   </footer>
